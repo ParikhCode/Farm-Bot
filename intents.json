@@ -1,0 +1,20 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi!", "Hello there", "Whats up", "Is anyone there?", "Hello", "Good Day"],
+     "responses": ["Hello!", "Good to see you again!", "How can I assist you?"],
+     "context-set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["Goodbye", "see you later", "I am leaving", "Have a good day", "I am going", "peace out"],
+     "responses": ["Goodbye!", "Till next time!", "Have a nice day!", "Talk to you later"],
+     "context-set": ""
+    },
+    {"tag": "knowledge",
+     "patterns": ["What can you do", "What do you know", "What is your purpose"],
+     "responses": ["I am Farm-Bot and I have vast knowedlge in Agronomy "],
+     "context-set": ""
+    }
+]
+
+
+}
