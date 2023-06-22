@@ -60,7 +60,7 @@ for x, doc in enumerate(docs_x):
 training = np.array(training)
 output = np.array(output)
 
-
+# Building AI training model
 tensorflow.compat.v1.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])                   # start off with the input data with length training
