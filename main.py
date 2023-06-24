@@ -19,7 +19,7 @@ with open("intents.json") as file:
     data = json.load(file)
 
 try:
-    with open("data.pickle", "rb") as f:
+    with open("data.pickle", "rb") as f:                    # if you change intents.json, delete old pickle file and model 
         words, labels, training, output = pickle.load(f)
 except:
     words = []
@@ -107,15 +107,17 @@ def chat():
         if inp.lower() == "quit":
             break
 
-        results = model.predict([bag_of_words(inp, words)])
+        results = model.predict([bag_of_words(inp, words)])[0]
         results_index = np.argmax(results)
         tag = labels[results_index]
-        
-        for tg in data["intents"]:
-            if tg['tag'] == tag:
-                responses = tg['responses']
 
-        print(random.choice(responses))
-        
+        if results[results_index] > 0.7:
+            for tg in data["intents"]:
+                if tg['tag'] == tag:
+                    responses = tg['responses']
+
+            print(random.choice(responses))
+        else:
+            print("I didn't get that, try again.")
 
 chat()
