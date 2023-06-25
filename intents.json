@@ -13,7 +13,62 @@
      "patterns": ["What can you do", "What do you know", "What is your purpose"],
      "responses": ["I am Farm-Bot and I have vast knowedlge in Agronomy "],
      "context-set": ""
+    },
+    {"tag": "broccoli_temp",
+     "patterns": ["What is temperature for broccoli", "What is the ideal temperature for broccoli", "temperature broccoli"],
+     "responses": ["67.5\u00B0 F", "The ideal tempertaure for broccoli is 67.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "cabbage_temp",
+     "patterns": ["What is temperature for cabbage", "What is the ideal temperature for cabbage", "temperature cabbage"],
+     "responses": ["65\u00B0 F", "The ideal tempertaure for cabbage is 65\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "cauliflower_temp",
+     "patterns": ["What is temperature for cauliflower", "What is the ideal temperature for cauliflower", "temperature cauliflower"],
+     "responses": ["67.5\u00B0 F", "The ideal tempertaure for cauliflower is 67.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "cucumber_temp",
+     "patterns": ["What is temperature for cucumber", "What is the ideal temperature for cucumber", "temperature cucumber"],
+     "responses": ["72.5\u00B0 F", "The ideal tempertaure for cucumber is 72.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "eggplant_temp",
+     "patterns": ["What is temperature for eggplant", "What is the ideal temperature for eggplant", "temperature eggplant"],
+     "responses": ["77.5\u00B0 F", "The ideal tempertaure for eggplant is 77.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "lettuce_temp",
+     "patterns": ["What is temperature for lettuce", "What is the ideal temperature for lettuce", "temperature lettuce"],
+     "responses": ["62.5\u00B0 F", "The ideal tempertaure for lettuce is 62.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "onion_temp",
+     "patterns": ["What is temperature for onion", "What is the ideal temperature for onion", "temperature onion"],
+     "responses": ["67.5\u00B0 F", "The ideal tempertaure for onion is 67.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "pepper_temp",
+     "patterns": ["What is temperature for pepper", "What is the ideal temperature for pepper", "temperature pepper"],
+     "responses": ["72.5\u00B0 F", "The ideal tempertaure for pepper is 72.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "squash_temp",
+     "patterns": ["What is temperature for squash", "What is the ideal temperature for squash", "temperature squash"],
+     "responses": ["72.5\u00B0 F", "The ideal tempertaure for squash is 72.5\u00B0 F"],
+     "context-set": ""
+    },
+    {"tag": "tomato_temp",
+     "patterns": ["What is temperature for tomato", "What is the ideal temperature for tomato", "temperature tomato"],
+     "responses": ["70\u00B0 F", "The ideal tempertaure for tomato is 70\u00B0 F"],
+     "context-set": ""
     }
+
+
+
+
+
 ]
 
 
