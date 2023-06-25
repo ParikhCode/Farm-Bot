@@ -45,12 +45,12 @@
      "context-set": ""
     },
     {"tag": "onion_temp",
-     "patterns": ["What is the temperature for onion", "What is the ideal temperature for onion", "temperature onion"],
+     "patterns": ["What is the temperature for onion", "What is the ideal temperature for onions", "temperature onion"],
      "responses": ["67.5\u00B0 F", "The ideal tempertaure for onion is 67.5\u00B0 F"],
      "context-set": ""
     },
     {"tag": "pepper_temp",
-     "patterns": ["What is the temperature for pepper", "What is the ideal temperature for pepper", "temperature pepper"],
+     "patterns": ["What is the temperature for pepper", "What is the ideal temperature for peppers", "temperature pepper"],
      "responses": ["72.5\u00B0 F", "The ideal tempertaure for pepper is 72.5\u00B0 F"],
      "context-set": ""
     },
@@ -60,7 +60,7 @@
      "context-set": ""
     },
     {"tag": "tomato_temp",
-     "patterns": ["What is the temperature for tomato", "What is the ideal temperature for tomato", "temperature tomato"],
+     "patterns": ["What is the temperature for tomato", "What is the ideal temperature for tomatoes", "temperature tomato"],
      "responses": ["70\u00B0 F", "The ideal tempertaure for tomato is 70\u00B0 F"],
      "context-set": ""
     },
@@ -80,12 +80,12 @@
      "context-set": ""
     },
     {"tag": "cucumber_long_grow_time",
-     "patterns": ["How long does it take for cucumber to grow?", "How much time does cucumber need to grow?", "cucumber grow", "cucumber time"],
+     "patterns": ["How long does it take for cucumbers to grow?", "How much time does cucumbers need to grow?", "cucumber grow", "cucumber time"],
      "responses": ["3 weeks", "It takes 3 weeks to grow cucumber!"],
      "context-set": ""
     },
     {"tag": "eggplant_long_grow_time",
-     "patterns": ["How long does it take for eggplant to grow?", "How much time does eggplant need to grow?", "eggplant grow", "eggplant time"],
+     "patterns": ["How long does it take for eggplant to grow?", "How much time do eggplants need to grow?", "eggplant grow", "eggplant time"],
      "responses": ["7.5 weeks", "It takes 7.5 weeks to grow eggplant!"],
      "context-set": ""
     },
@@ -95,72 +95,72 @@
      "context-set": ""
     },
     {"tag": "onion_long_grow_time",
-     "patterns": ["How long does it take for onion to grow?", "How much time does onion need to grow?", "onion grow", "onion time"],
+     "patterns": ["How long does it take for onions to grow?", "How much time do onions need to grow?", "onion grow", "onion time"],
      "responses": ["10.5 weeks", "It takes 10.5 weeks to grow onion!"],
      "context-set": ""
     },
     {"tag": "pepper_long_grow_time",
-     "patterns": ["How long does it take for pepper to grow?", "How much time does pepper need to grow?", "pepper grow", "pepper time"],
+     "patterns": ["How long does it take for peppers to grow?", "How much time do peppers need to grow?", "pepper grow", "pepper time"],
      "responses": ["8 weeks", "It takes 8 weeks to grow pepper!"],
      "context-set": ""
     },
     {"tag": "squash_long_grow_time",
-     "patterns": ["How long does it take for squash to grow?", "How much time does squash need to grow?", "squash grow", "squash time"],
+     "patterns": ["How long does it take for squash to grow?", "How much time do squash need to grow?", "squash grow", "squash time"],
      "responses": ["3 weeks", "It takes 3 weeks to grow squash!"],
      "context-set": ""
     },
     {"tag": "tomato_long_grow_time",
-     "patterns": ["How long does it take for tomato to grow?", "How much time does tomato need to grow?", "tomato grow", "tomato time"],
+     "patterns": ["How long does it take for tomatoes to grow?", "How much time do tomatoes need to grow?", "tomato grow", "tomato time"],
      "responses": ["5.5 weeks", "It takes 5.5 weeks to grow tomato!"],
      "context-set": ""
     },
     {"tag": "when to plant broccoli",
-     "patterns": ["when do you plant broccoli?", "when should I plant broccoli?", "What months should I plant broccoli?"],
+     "patterns": ["when do you plant broccoli?", "what is the ideal season to plant broccoli?", "What months should I plant broccoli?"],
      "responses": ["late March or August", "You should plant broccoli in late March or August!", "It's best to plant broccoli in late March or August!"],
      "context-set": ""
     },
     {"tag": "when to plant cabbage",
-     "patterns": ["when do you plant cabbage?", "when should I plant cabbage?", "What months should I plant cabbage?"],
+     "patterns": ["when do you plant cabbage?", "what is the ideal season to plant cabbage?", "What months should I plant cabbage?"],
      "responses": ["May or late August", "You should plant cabbage in May or late August!", "It's best to plant cabbage in May or late August!"],
      "context-set": ""
     },
     {"tag": "when to plant cauliflower",
-     "patterns": ["when do you plant cauliflower?", "when should I plant cauliflower?", "What months should I plant cauliflower?"],
+     "patterns": ["when do you plant cauliflower?", "what is the ideal season to plant cauliflower?", "What months should I plant cauliflower?"],
      "responses": ["April or August", "You should plant cauliflower in April or August!", "It's best to plant cauliflower in April or August!"],
      "context-set": ""
     },
     {"tag": "when to plant cucumber",
-     "patterns": ["when do you plant cucumber?", "when should I plant cucumber?", "What months should I plant cucumber?"],
+     "patterns": ["when do you plant cucumbers?", "what is the ideal season to plant cucumbers?", "What months should I plant cucumber?"],
      "responses": ["April to September", "You should plant cucumber in April to September!", "It's best to plant cucumber in April to September!"],
      "context-set": ""
     },
     {"tag": "when to plant eggplant",
-     "patterns": ["when do you plant eggplant?", "when should I plant eggplant?", "What months should I plant eggplant?"],
+     "patterns": ["when do you plant eggplant?", "what is the ideal season to plant eggplant?", "What months should I plant eggplant?"],
      "responses": ["April to August", "You should plant eggplant in April to August!", "It's best to plant eggplant in April to August!"],
      "context-set": ""
     },
     {"tag": "when to plant lettuce",
-     "patterns": ["when do you plant lettuce?", "when should I plant lettuce?", "What months should I plant lettuce?"],
+     "patterns": ["when do you plant lettuce?", "what is the ideal season to plant lettuce?", "What months should I plant lettuce?"],
      "responses": ["Year round", "You can plant lettuce year round!", "It's best to plant lettuce year round!"],
      "context-set": ""
     },
     {"tag": "when to plant onion",
-     "patterns": ["when do you plant onion?", "when should I plant onion?", "What months should I plant onion?"],
+     "patterns": ["when do you plant onions?", "what is the ideal season to plant onions?", "What months should I plant onion?"],
      "responses": ["Late February or late October", "You can plant onion in late February or late October!", "It's best to plant onion in late February or late October!"],
      "context-set": ""
     },
     {"tag": "when to plant pepper",
-     "patterns": ["when do you plant pepper?", "when should I plant pepper?", "What months should I plant pepper?"],
+     "patterns": ["when do you plant peppers?", "what is the ideal season to plant peppers?", "What months should I plant pepper?"],
      "responses": ["April to July", "You can plant pepper in April to July!", "It's best to plant pepper in April to July!"],
      "context-set": ""
     },
     {"tag": "when to plant squash",
-     "patterns": ["when do you plant squash?", "when should I plant squash?", "What months should I plant squash?"],
+     "patterns": ["when do you plant squash?", "what is the ideal season to plant squash?", "What months should I plant squash?"],
      "responses": ["April to May", "You can plant squash in April to May!", "It's best to plant squash in April to May!"],
      "context-set": ""
     },
     {"tag": "when to plant tomato",
-     "patterns": ["when do you plant tomato?", "when should I plant tomato?", "What months should I plant tomato?"],
+     "patterns": ["when do you plant tomatoes?", "what is the ideal season to plant tomatoes?", "What months should I plant tomato?"],
      "responses": ["Mid March to mid July", "You can plant tomato in mid March to mid July!", "It's best to plant tomato in mid March to mid July!"],
      "context-set": ""
     },
