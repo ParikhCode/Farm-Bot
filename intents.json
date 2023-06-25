@@ -63,7 +63,59 @@
      "patterns": ["What is temperature for tomato", "What is the ideal temperature for tomato", "temperature tomato"],
      "responses": ["70\u00B0 F", "The ideal tempertaure for tomato is 70\u00B0 F"],
      "context-set": ""
-    }
+    },
+    {"tag": "broccoli_long_grow_time",
+     "patterns": ["How long does it take for broccoli to grow?", "How much time does broccoli need to grow?", "broccoli grow", "broccoli time"],
+     "responses": ["5.5 weeks", "It takes 5.5 weeks to grow broccoli!"],
+     "context-set": ""
+    },
+    {"tag": "cabbage_long_grow_time",
+     "patterns": ["How long does it take for cabbage to grow?", "How much time does cabbage need to grow?", "cabbage grow", "cabbage time"],
+     "responses": ["6.5 weeks", "It takes 6.5 weeks to grow cabbage!"],
+     "context-set": ""
+    },
+    {"tag": "cauliflower_long_grow_time",
+     "patterns": ["How long does it take for cauliflower to grow?", "How much time does cauliflower need to grow?", "cauliflower grow", "cauliflower time"],
+     "responses": ["7 weeks", "It takes 7 weeks to grow cauliflower!"],
+     "context-set": ""
+    },
+    {"tag": "cucumber_long_grow_time",
+     "patterns": ["How long does it take for cucumber to grow?", "How much time does cucumber need to grow?", "cucumber grow", "cucumber time"],
+     "responses": ["3 weeks", "It takes 3 weeks to grow cucumber!"],
+     "context-set": ""
+    },
+    {"tag": "eggplant_long_grow_time",
+     "patterns": ["How long does it take for eggplant to grow?", "How much time does eggplant need to grow?", "eggplant grow", "eggplant time"],
+     "responses": ["7.5 weeks", "It takes 7.5 weeks to grow eggplant!"],
+     "context-set": ""
+    },
+    {"tag": "lettuce_long_grow_time",
+     "patterns": ["How long does it take for lettuce to grow?", "How much time does lettuce need to grow?", "lettuce grow", "lettuce time"],
+     "responses": ["5 weeks", "It takes 5 weeks to grow lettuce!"],
+     "context-set": ""
+    },
+    {"tag": "onion_long_grow_time",
+     "patterns": ["How long does it take for onion to grow?", "How much time does onion need to grow?", "onion grow", "onion time"],
+     "responses": ["10.5 weeks", "It takes 10.5 weeks to grow onion!"],
+     "context-set": ""
+    },
+    {"tag": "pepper_long_grow_time",
+     "patterns": ["How long does it take for pepper to grow?", "How much time does pepper need to grow?", "pepper grow", "pepper time"],
+     "responses": ["8 weeks", "It takes 8 weeks to grow pepper!"],
+     "context-set": ""
+    },
+    {"tag": "squash_long_grow_time",
+     "patterns": ["How long does it take for squash to grow?", "How much time does squash need to grow?", "squash grow", "squash time"],
+     "responses": ["3 weeks", "It takes 3 weeks to grow squash!"],
+     "context-set": ""
+    },
+    {"tag": "tomato_long_grow_time",
+     "patterns": ["How long does it take for tomato to grow?", "How much time does tomato need to grow?", "tomato grow", "tomato time"],
+     "responses": ["5.5 weeks", "It takes 5.5 weeks to grow tomato!"],
+     "context-set": ""
+    },
+
+
 
 
 
