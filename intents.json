@@ -114,6 +114,56 @@
      "responses": ["5.5 weeks", "It takes 5.5 weeks to grow tomato!"],
      "context-set": ""
     },
+    {"tag": "when to plant broccoli",
+     "patterns": ["when do you plant broccoli?", "when should I plant broccoli?", "What months should I plant broccoli?"],
+     "responses": ["late March or August", "You should plant broccoli in late March or August!", "It's best to plant broccoli in late March or August!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant cabbage",
+     "patterns": ["when do you plant cabbage?", "when should I plant cabbage?", "What months should I plant cabbage?"],
+     "responses": ["May or late August", "You should plant cabbage in May or late August!", "It's best to plant cabbage in May or late August!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant cauliflower",
+     "patterns": ["when do you plant cauliflower?", "when should I plant cauliflower?", "What months should I plant cauliflower?"],
+     "responses": ["April or August", "You should plant cauliflower in April or August!", "It's best to plant cauliflower in April or August!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant cucumber",
+     "patterns": ["when do you plant cucumber?", "when should I plant cucumber?", "What months should I plant cucumber?"],
+     "responses": ["April to September", "You should plant cucumber in April to September!", "It's best to plant cucumber in April to September!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant eggplant",
+     "patterns": ["when do you plant eggplant?", "when should I plant eggplant?", "What months should I plant eggplant?"],
+     "responses": ["April to August", "You should plant eggplant in April to August!", "It's best to plant eggplant in April to August!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant lettuce",
+     "patterns": ["when do you plant lettuce?", "when should I plant lettuce?", "What months should I plant lettuce?"],
+     "responses": ["Year round", "You can plant lettuce year round!", "It's best to plant lettuce year round!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant onion",
+     "patterns": ["when do you plant onion?", "when should I plant onion?", "What months should I plant onion?"],
+     "responses": ["Late February or late October", "You can plant onion in late February or late October!", "It's best to plant onion in late February or late October!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant pepper",
+     "patterns": ["when do you plant pepper?", "when should I plant pepper?", "What months should I plant pepper?"],
+     "responses": ["April to July", "You can plant pepper in April to July!", "It's best to plant pepper in April to July!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant squash",
+     "patterns": ["when do you plant squash?", "when should I plant squash?", "What months should I plant squash?"],
+     "responses": ["April to May", "You can plant squash in April to May!", "It's best to plant squash in April to May!"],
+     "context-set": ""
+    },
+    {"tag": "when to plant tomato",
+     "patterns": ["when do you plant tomato?", "when should I plant tomato?", "What months should I plant tomato?"],
+     "responses": ["Mid March to mid July", "You can plant tomato in mid March to mid July!", "It's best to plant tomato in mid March to mid July!"],
+     "context-set": ""
+    },
 
 
 
