@@ -24,7 +24,7 @@ AnsMatrix = [[67.5,5.5,'late March or August','late May or late October',6.5,6.2
 
 
 '''TEST QUESTION'''
-InputQ = 'What is the ideal season to plant cucumber'
+InputQ = 'cauliflower ph'
 
 
 '''Store question as list of strings'''

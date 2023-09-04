@@ -164,6 +164,106 @@
      "responses": ["Mid March to mid July", "You can plant tomato in mid March to mid July!", "It's best to plant tomato in mid March to mid July!"],
      "context-set": ""
     },
+    {"tag": "when to harvest broccoli",
+     "patterns": ["when should I harvest broccoli", "when is it ideal to harvest broccoli?", "What months should I harvest broccoli?"],
+     "responses": ["late May or late October", "You can harvest broccoli in late May or late October!", "It's best to harvest broccoli in late May or late October!"],
+     "context-set": ""
+    },
+    {"tag": "when to harvest cabbage",
+     "patterns": ["when should I harvest cabbage", "when is it ideal to harvest cabbage?", "What months should I harvest cabbage?"],
+     "responses": ["December or May", "You can harvest cabbage in December or May!", "It's best to harvest cabbage in December or May!"],
+     "context-set": ""
+    },
+    {"tag": "when to harvest cauliflower",
+     "patterns": ["when should I harvest cauliflower", "when is it ideal to harvest cauliflower?", "What months should I harvest cauliflower?"],
+     "responses": ["late May or November", "You can harvest cauliflower in late May or November!", "It's best to harvest cauliflower in late May or November!"],
+     "context-set": ""
+    },
+    {"tag": "when to harvest cucumber",
+     "patterns": ["when should I harvest cucumber", "when is it ideal to harvest cucumber?", "What months should I harvest cucumber?"],
+     "responses": ["May to October", "You can harvest cucumber in May to October!", "It's best to harvest cucumber in May to October!"],
+     "context-set": ""
+    },
+    {"tag": "when to harvest lettuce",
+     "patterns": ["when should I harvest lettuce", "when is it ideal to harvest lettuce?", "What months should I harvest lettuce?"],
+     "responses": ["year round", "You can harvest lettuce year round!", "It's best to harvest lettuce year round!"],
+     "context-set": ""
+    },
+                                                {"tag": "when to harvest onion",
+                                                "patterns": ["when should I harvest onion", "when is it ideal to harvest onion?", "What months should I harvest onion?"],
+                                                "responses": ["year round", "You can harvest onion year round!", "It's best to harvest onion year round!"],
+                                                "context-set": ""
+                                                },
+    {"tag": "when to harvest pepper",
+     "patterns": ["when should I harvest pepper", "when is it ideal to harvest pepper?", "What months should I harvest pepper?"],
+     "responses": ["June to November", "You can harvest pepper June to November!", "It's best to harvest pepper June to November!"],
+     "context-set": ""
+    },
+    {"tag": "when to harvest squash",
+     "patterns": ["when should I harvest squash", "when is it ideal to harvest squash?", "What months should I harvest squash?"],
+     "responses": ["May to June", "You can harvest squash May to June!", "It's best to harvest squash May to June!"],
+     "context-set": ""
+    },
+    {"tag": "when to harvest tomato",
+     "patterns": ["when should I harvest tomato", "when is it ideal to harvest tomato?", "What months should I harvest tomato?"],
+     "responses": ["June to December", "You can harvest tomato June to December!", "It's best to harvest tomato June to December!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for broccoli",
+     "patterns": ["what should the ph for broccoli be", "what is the ideal ph for broccoli?", "broccoli ph"],
+     "responses": ["6.5", "You can set the ph for broccoli to 6.5!", "The ideal ph for broccoli is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for cabbage",
+     "patterns": ["what should the ph for cabbage be", "what is the ideal ph for cabbage?", "cabbage ph"],
+     "responses": ["6.5", "You can set the ph for cabbage to 6.5!", "The ideal ph for cabbage is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for cauliflower",
+     "patterns": ["what should the ph for cauliflower be", "what is the ideal ph for cauliflower?", "cauliflower ph"],
+     "responses": ["6.5", "You can set the ph for cauliflower to 6.5!", "The ideal ph for cauliflower is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for cucumber",
+     "patterns": ["what should the ph for cucumber be", "what is the ideal ph for cucumber?", "cucumber ph"],
+     "responses": ["6.5", "You can set the ph for cucumber to 6.5!", "The ideal ph for cucumber is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for eggplant",
+     "patterns": ["what should the ph for eggplant be", "what is the ideal ph for eggplant?", "eggplant ph"],
+     "responses": ["6.5", "You can set the ph for eggplant to 6.5!", "The ideal ph for eggplant is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for lettuce",
+     "patterns": ["what should the ph for lettuce be", "what is the ideal ph for lettuce?", "lettuce ph"],
+     "responses": ["6.5", "You can set the ph for lettuce to 6.5!", "The ideal ph for lettuce is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for onion",
+     "patterns": ["what should the ph for onion be", "what is the ideal ph for onion?", "onion ph"],
+     "responses": ["6.5", "You can set the ph for onion to 6.5!", "The ideal ph for onion is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for pepper",
+     "patterns": ["what should the ph for pepper be", "what is the ideal ph for pepper?", "pepper ph"],
+     "responses": ["6.5", "You can set the ph for pepper to 6.5!", "The ideal ph for pepper is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for squash",
+     "patterns": ["what should the ph for squash be", "what is the ideal ph for squash?", "squash ph"],
+     "responses": ["6.5", "You can set the ph for squash to 6.5!", "The ideal ph for squash is 6.5!"],
+     "context-set": ""
+    },
+    {"tag": "what is the ph for tomatoes",
+     "patterns": ["what should the ph for tomatoes be", "what is the ideal ph for tomatoes?", "tomatoes ph"],
+     "responses": ["6.5", "You can set the ph for tomatoes to 6.5!", "The ideal ph for tomatoes is 6.5!"],
+     "context-set": ""
+    }
+
+
+
+    
+
 
 
 
