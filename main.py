@@ -1,123 +1,191 @@
-"""
-Python Docstring
+"""Module Main used for logging notes with date and time """
+import datetime
+
+import speech_recognition as sr
+import pyttsx3
+import webbrowser
+import wikipedia
+import wolframalpha
+import pywhatkit
+import bot
+
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+engine.setProperty('voices', voices[0].id)
+
+activationWord = 'farmbot'
+
+
+# setting path for Chrome
+chrome_path = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+
+appID = '2KE58X-ULEHAJ9LP8'
+wolframClient = wolframalpha.Client(appID)
+
 
 """
-import json
-import numpy as np
-import nltk
-from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
-
-import tflearn
-import tensorflow
-import random 
-import pickle
+This method allows the AI assistant to compute problems
 
 
+:param query: text that is sent to the WolframAlpha API and describes what is to be computed 
+"""
+def searchWolframAlpha(query = ''):
+    response = wolframClient.query(query)
 
-with open("intents.json") as file:
-    data = json.load(file)
+    if response['@success'] == 'false':
+        return 'Could not Compute'
+    else:
+        result = ''
 
-try:
-    with open("data.pickle", "rb") as f:                    # if you change intents.json, delete old pickle file and model 
-        words, labels, training, output = pickle.load(f)
-except:
-    words = []
-    labels = []
-    docs_x = []
-    docs_y = []
+        pod0 = response['pod'][0]
 
-    for intent in data["intents"]: #  STEMMING
-        for pattern in intent["patterns"]:
-            wrds = nltk.word_tokenize(pattern)
-            words.extend(wrds)
-            docs_x.append(wrds)
-            docs_y.append(intent["tag"])
-
-        if intent["tag"] not in labels:
-            labels.append(intent["tag"])
-
-    words = [stemmer.stem(w.lower()) for w in words if w != "?"]
-    words = sorted(list(set(words)))
-
-    labels = sorted(labels)
-
-    training = []
-    output = []
-
-    out_empty = [0 for _ in range(len(labels))]
-
-    for x, doc in enumerate(docs_x):
-        bag = []
-
-        wrds = [stemmer.stem(w) for w in doc]
-
-        for w in words:
-            if w in wrds:
-                bag.append(1)
-            else:
-                bag.append(0)
-
-        output_row = out_empty[:]
-        output_row[labels.index(docs_y[x])] = 1
-
-        training.append(bag)
-        output.append(output_row)
-
-    training = np.array(training)
-    output = np.array(output)
-
-    with open("data.pickle", "wb") as f:
-            pickle.dump((words, labels, training, output), f)
-
-# Building AI training model
-tensorflow.compat.v1.reset_default_graph()
-
-net = tflearn.input_data(shape=[None, len(training[0])])                   # start off with the input data with length training
-net = tflearn.fully_connected(net, 8)                                      # 2 hidden layers with 8 nerons fully connected
-net = tflearn.fully_connected(net, 8)                                       
-net = tflearn.fully_connected(net, len(output[0]), activation="softmax")   # another fully connected hidden layer that has neurons 
-                                                                           # representing each of our classes
-net = tflearn.regression(net)
-
-model = tflearn.DNN(net)                                                   # DNN is a type of neural network
-
-try:
-    model.load("model.tflearn")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
-
-def bag_of_words(s, words):
-    bag = [0 for _ in range(len(words))]
-
-    s_words = nltk.word_tokenize(s)
-    s_words = [stemmer.stem(word.lower()) for word in s_words]
-
-    for se in s_words:
-        for i, w in enumerate(words):
-            if w == se:
-                bag[i] = 1
-    return np.array(bag)
-
-def chat():
-    print("Start talking with the bot (type quit to stop)!")
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            break
-
-        results = model.predict([bag_of_words(inp, words)])[0]
-        results_index = np.argmax(results)
-        tag = labels[results_index]
-
-        if results[results_index] > 0.7:
-            for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    responses = tg['responses']
-
-            print(random.choice(responses))
+        pod1 = response['pod'][1]
+        if (('result') in pod1['@title'].lower()) or (pod1.get('@primary', 'false') == 'true') or ('definition' in pod1['@title'].lower()):
+            # Get the result
+            result = listOrDict(pod1['subpod'])
+            # Remove bracketed section
+            return result.split('(')[0]
         else:
-            print("I didn't get that, try again.")
+            # Get the interpretation from pod0
+            question = listOrDict(pod0['subpod'])
+            # Remove bracketed section
+            question = question.split('(')[0]
 
-chat()
+            speak('Computation failed. Querying Universal Databank')
+            return search_wikipedia(question)
+
+
+
+def listOrDict(var):
+
+    if isinstance(var, list):
+        return var[0]['plaintext']
+    else:
+        return var['plaintext']
+
+
+"""
+
+This method searches wikipedia with the given query.
+
+:param query: text that will be searched through wikipedia
+
+"""
+def search_wikipedia(query = ''):
+    
+    searchResults = wikipedia.search(query)
+    
+    if not searchResults:
+        print('No Wikipedia Results')
+        return 'No Results received'
+    
+    try:
+        wikipage = wikipedia.page(searchResults[0])
+    except wikipedia.DisambiguationError as error:
+        wikipage = wikipedia.page(error.options[0])
+    
+    print(wikipage.title)
+    wikiSummary = str(wikipage.summary)
+    
+    return wikiSummary
+
+"""
+
+This method sets the properties for the speech recognition library.
+
+:param text: the words that will be said by the Assistant 
+:param rate: how fast the text will be spoken
+
+"""
+def speak(text, rate = 120):
+    engine.setProperty('rate', rate)
+    engine.say(text)
+    engine.runAndWait()
+
+"""
+This is method listens for a voice to be spoken into the microphone.
+
+"""
+def parseCommand():
+    listener = sr.Recognizer()
+    print('Listening for a command')
+
+    with sr.Microphone() as source:
+        listener.pause_threshold = 2
+        input_speech = listener.listen(source)
+
+    try:
+        print('Recognizing speech...')
+        query = listener.recognize(input_speech)
+        print(f'The input speech was: {query}')
+    except Exception as exception:
+        print('I did not quite catch that')
+        speak('I did not quite catch that')
+        print(exception)
+        return 'None'
+
+    return query
+
+"""
+Main method
+
+"""
+if __name__ == '__main__':
+    speak('All systems nominal')
+
+    while True:
+        query = parseCommand().lower().split()
+
+        if query[0] == activationWord:
+            query.pop(0)
+
+            if query[0] == 'say':
+                if 'hello' in query:
+                    speak('Greetings all')
+                else:
+                    query.pop(0)
+                    speech = ' '.join(query)
+                    speak(speech)
+
+            if query[0] == 'go' and query[1] == 'to':
+                speak('Opening...')
+                query = ' '.join(query[2:])
+                webbrowser.get('chrome').open_new(query)
+
+            if query[0] == 'wikipedia':
+                query = ' '.join(query[1:])
+                speak('Querying the universal databank.')
+                speak(search_wikipedia(query))
+
+            if query[0] == 'compute' or query[0] == 'computer':
+                query = ' '.join(query[1:])
+                speak('Computing')
+                try:
+                    result = searchWolframAlpha(query)
+                    speak(result)
+                except:
+                    speak('Unable to Compute.')
+
+            if query[0] == 'log':
+                speak('Ready to record your note')
+                newNote = parseCommand().lower()
+                now = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+                with open('note_%s.txt' % now) as newFile:
+                    newFile.write(newNote)
+                speak('Note Written')
+
+
+            if query[0] == 'play':
+                speak('Playing song...')
+                query = ' '.join(query[1:])
+                pywhatkit.playonyt(query)
+
+            if query[0] == 'information':
+                bot.chat()
+
+
+            if query[0] == 'exit':
+                speak('Bye')
+                break
+
