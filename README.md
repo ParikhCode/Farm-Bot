@@ -16,14 +16,14 @@ This project was developed in response too individuals who are interested in lea
 
 - Run main.py in terminal 
 - Say activation word ("FarmBot") followed by what action you want to run:
-  - Ex: Say Hi - FarmBot hello
-  - Ex: Navigate the web - Farmbot go to google.com
-  - Ex: Play a song - FarmBot play Don't Stop Believing
-  - Ex: Learn more about a topic - FarmBot wikipedia Python chatbots
-  - Ex: Take notes - Farmbot log (this will require you to wait a second and once it is "ready" you can finish saying what you want)
-  - Ex: Compute equations - FarmBot compute 1 + 2 * 3 - 4 / 5
-  - Ex: Ask Agronomy questions - FarmBot information (this will require you to wait a second and then TYPE your question)
-  - Ex: Stop the Program - FarmBot exit
+  - Say Hi - FarmBot hello
+  - Navigate the web - Farmbot go to google.com
+  - Play a song - FarmBot play Don't Stop Believing
+  - Learn more about a topic - FarmBot wikipedia Python chatbots
+  - Take notes - Farmbot log (this will require you to wait a second and once it is "ready" you can finish saying what you want)
+  - Compute equations - FarmBot compute 1 + 2 * 3 - 4 / 5
+  - Ask Agronomy questions - FarmBot information (this will require you to wait a second and then TYPE your question)
+  - Stop the Program - FarmBot exit
 
 ## Installation
 
