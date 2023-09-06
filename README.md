@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project was developed in response too individuals who are interested in learning more about Agronomy and training your own chatbot. Currently FarmBot is a simple chatbot that can answer basic questions about 10 different crops. These questions are can be viewed in the intents.json file as well as their different variations. Despite training and having the bot learn, it also has the abilities of an AI Assistant where it can navigate the web, wikipedia various information, compute equations, take notes, and play songs.    
+This project was developed in response too individuals who are interested in learning more about Agronomy and training your own chatbot. Currently FarmBot is a simple chatbot that can answer basic questions about 10 different crops. These questions can be viewed in the intents.json file as well as their different variations. Despite training and having the bot learn, it also has the abilities of an AI Assistant where it can navigate the web, wikipedia various information, compute equations, take notes, and play songs.    
 
 ## Execution
 
