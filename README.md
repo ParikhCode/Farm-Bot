@@ -1,5 +1,10 @@
 # Farm-Bot
 
+## Authors
+
+- Hunter VanEttan
+- Parth Parikh
+
 ## Overview
 
 This project was developed in response too individuals who are interested in learning more about Agronomy and training your own chatbot. Currently FarmBot is a simple chatbot that can answer basic questions about 10 different crops. These questions are can viewed in the intents.json file as well as their different variations. Despite training and having the bot learn, it also has the abilities of an AI Assistant as well where it can navigate the web, wikipedia various information, compute equations, take notes, and play songs.    
@@ -19,7 +24,7 @@ This project was developed in response too individuals who are interested in lea
 
 ## Installation
 
-- Visit [Conda.io] (https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to install the virtual environment
+- Visit this link to install the Conda virtual environment: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 - Make sure you have PYTHON 3.6 installed in your Conda virtual environment
 - Inside your virtual environment, install these packages using **pip install (package_name)**:
   - numpy
@@ -41,10 +46,8 @@ This project was developed in response too individuals who are interested in lea
 
 ## Helpful Links
 
-[![Python Chatbot tutorial]] https://youtu.be/wypVcNIH6D4
+These links were used to setup this project and as a guide to building the code.
 
+- Python Chatbot tutorial: https://youtu.be/wypVcNIH6D4
 
-## Sources
-
-enter sources here
-
+- Python AI_Assistant: https://youtu.be/OqFI_g8vAoc
