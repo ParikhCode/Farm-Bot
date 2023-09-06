@@ -5,7 +5,7 @@
 * [Authors](#Authors)
 * [Overview](#Overview)
 * [Execution](#Execution)
-* [Installation](#Instalation)
+* [Installation](#Installation)
 * [Key Topics](#Key_Topics)
 * [Helpful Links](#Helpful_Links)
 
