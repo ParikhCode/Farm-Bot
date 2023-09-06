@@ -6,8 +6,8 @@ This project was developed in response too individuals who are interested in lea
 
 ## Execution
 
-1. Run main.py in terminal 
-2. Say activation word ("FarmBot") followed by what action you want to run:
+- Run main.py in terminal 
+- Say activation word ("FarmBot") followed by what action you want to run:
   - Ex: Say Hi - FarmBot hello
   - Ex: Navigate the web - Farmbot go to google.com
   - Ex: Play a song - FarmBot play Don't Stop Believing
@@ -19,9 +19,9 @@ This project was developed in response too individuals who are interested in lea
 
 ## Installation
 
-1. Visit this link to install Conda as your virtual environment: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
-2. Make sure you have PYTHON 3.6 installed in your Conda virtual environment
-3. Inside your virtual environment, install these packages using <u>pip install package_name</u>:
+- Visit [Conda.io] (https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to install the virtual environment
+- Make sure you have PYTHON 3.6 installed in your Conda virtual environment
+- Inside your virtual environment, install these packages using **pip install (package_name)**:
   - numpy
   - nltk
   - tensorflow
