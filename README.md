@@ -41,7 +41,7 @@ This project was developed in response too individuals who are interested in lea
 
 ## Helpful Links
 
-enter links here
+[![Python Chatbot tutorial]] https://youtu.be/wypVcNIH6D4
 
 
 ## Sources
