@@ -1,4 +1,13 @@
-# Farm-Bot
+# FarmBot
+
+## Table of Contents
+
+* [Authors](#Authors)
+* [Overview](#Overview)
+* [Execution](#Execution)
+* [Installation](#Instalation)
+* [Key Topics](#Key_Topics)
+* [Helpful Links](#Helpful_Links)
 
 ## Authors
 
@@ -7,7 +16,7 @@
 
 ## Overview
 
-This project was developed in response too individuals who are interested in learning more about Agronomy and training your own chatbot. Currently FarmBot is a simple chatbot that can answer basic questions about 10 different crops. These questions are can viewed in the intents.json file as well as their different variations. Despite training and having the bot learn, it also has the abilities of an AI Assistant as well where it can navigate the web, wikipedia various information, compute equations, take notes, and play songs.    
+This project was developed in response too individuals who are interested in learning more about Agronomy and training your own chatbot. Currently FarmBot is a simple chatbot that can answer basic questions about 10 different crops. These questions are can be viewed in the intents.json file as well as their different variations. Despite training and having the bot learn, it also has the abilities of an AI Assistant where it can navigate the web, wikipedia various information, compute equations, take notes, and play songs.    
 
 ## Execution
 
@@ -38,13 +47,13 @@ This project was developed in response too individuals who are interested in lea
   - wolframalpha
   - pywhatkit
 
-## Key topics
+## Key_Topics
 
 - Deep Learning 
 - Python Programming
 
 
-## Helpful Links
+## Helpful_Links
 
 These links were used to setup this project and as a guide to building the code.
 
