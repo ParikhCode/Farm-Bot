@@ -2,17 +2,11 @@
 
 ## Table of Contents
 
-* [Authors](#Authors)
 * [Overview](#Overview)
 * [Execution](#Execution)
 * [Installation](#Installation)
 * [Key Topics](#Key_Topics)
 * [Helpful Links](#Helpful_Links)
-
-## Authors
-
-- Hunter VanEttan
-- Parth Parikh
 
 ## Overview
 
